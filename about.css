@@ -1,0 +1,26 @@
+.fullCont{
+    max-height: 60vh;
+    width:100vw;
+    overflow: hidden;
+}
+.full{
+    width:100vw;
+    height:auto;
+    object-fit: fill;
+    margin-top: -20%;
+
+    
+}
+#about{
+    margin:0 3rem;
+}
+
+#topAchieversImgContainer{
+    width:100%;
+}
+#topAchieversImgContainer>img{
+
+    object-fit: contain;
+    width:100%;
+    height: auto;
+}

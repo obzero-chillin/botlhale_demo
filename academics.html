@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="academics.css">
+    <title>Botlhale International School</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navHalf"></div>
+            <div class="navHalf " id="navigation">
+                <div class="navItems">
+                    
+                    <ul>                
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>                    
+                        <li>
+                            <a href="academics.html">Academics</a>
+                        </li>
+                        <li>
+                            <a href="admissions.html">Admissions</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    
+
+                </div>
+                <button id="menuButton" onclick="toggleMenu()">
+                    X
+                </button>
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+        <div class="topImg">
+            <div class="fullCont">
+                <img src="./assets/scenicInside.png" alt="Botlhale inside image" class="full" />
+            </div>
+        </div>
+       
+
+        <div id="topicContainer">
+            <div id="academicDisplay">
+                <h1 id="topic">IGCSE</h1>
+                <hr id="academicSeparator" />
+                <p id="acDescription">
+                    The IGCSE (International General Certificate of Secondary Education) is a globally 
+                    recognized qualification designed for students aged 14–16. It provides a strong 
+                    academic foundation that encourages critical thinking, problem-solving, and 
+                    independent learning. <br/><br/>
+                    Offered across a wide range of subjects, the IGCSE curriculum allows students to explore their interests while developing essential knowledge and skills.<br/><br/>
+
+Our IGCSE programme follows internationally benchmarked standards and prepares students for 
+further studies such as A Levels, IB Diploma, or other advanced pre-university pathways. 
+Assessment methods include written examinations, coursework, and practical work, ensuring a 
+balanced evaluation of student performance. Through the IGCSE, students gain the confidence, 
+academic discipline, and global perspective needed to succeed in higher education and beyond.</p>
+
+            </div>
+
+            <div id="selectTopicContainer">
+                <select name="academicPick" id="academicSelect">
+                    <option >A-Levels</option>
+                    <option selected>IGCSE</option>
+                </select>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="academics.js"></script>
+  
+    
+</body>
+</html>

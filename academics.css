@@ -1,0 +1,19 @@
+
+#topicContainer{
+    width:100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    
+    
+}
+#academicSeparator{
+}
+#academicSelect{
+    width:60%;
+    padding:1rem;
+    border: 2px solid var(--tetiary2);
+}
+#academicDisplay{
+    margin:0 3rem;
+}
