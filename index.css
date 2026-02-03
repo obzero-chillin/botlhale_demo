@@ -91,10 +91,13 @@ main{
 
 }
 .imgCont{
-    max-height: 80vh;
+    max-height: 50vh;
     width:100vw;
     overflow: hidden;
     z-index: 200;
+}
+#status{
+    color: green;
 }
 #homeImg{
     
