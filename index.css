@@ -23,11 +23,11 @@ body{
                             0 4px 12px rgba(0, 0, 0, 0.15);
 
 
-    --navHeight:50px;
-    background-color: var(--tetiary1);
+    --navHeight:50px;   
     color: white;
     max-width: 100vw;
     
+    background:linear-gradient(var(--tetiary1) 0%, var(--tetiary1) 50%, rgb(19, 19, 99));
 
     margin:0;
     padding:0;
@@ -92,7 +92,7 @@ main{
     margin-top: var(--navHeight);
     width:100%;
     min-height: 50px;
-    max-height:60vh;
+    max-height:80vh;
     background-image: url("/assets/field2.png");
     background-size: cover;
     background-position: center;
@@ -116,19 +116,39 @@ main{
     width:100%;
     height:100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+#enrollDivCont{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#intro{
+    text-align: center;
+    width:100%;
+    color: white;
+    backdrop-filter: blur(0.1px);
+    border-radius: 10px;
+    
 }
 #enrollCard{
     width:fit-content;
     text-align: center;
-    margin-block: 6rem;
+    margin-block: 4rem;
     padding-block: 1rem;
     padding-inline: 3rem;
     background-color: rgba(0, 0, 255, 0.411);
     color: white;
     backdrop-filter: blur(20px);
     border-radius: 10px;
+}
+#quote{
+    filter: brightness(80%);
 }
 .imgCont{
     max-height: 50vh;
