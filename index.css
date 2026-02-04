@@ -42,7 +42,7 @@ li{
     list-style: none;
 }
 .normalLi{
-    list-style: circle;
+    list-style: outside;
 }
 .emphasis{
     color:var(--tetiary2) !important;
@@ -315,7 +315,7 @@ button:hover{
     margin-inline:4rem;
 
     
-    background-color: rgb(97, 97, 97);
+    background-color: blue;
 }
 #back{
     color:var(--bg);
@@ -336,7 +336,8 @@ button:hover{
 #homeCurriculumMenu>div{
     width:100%;
     height:100%;
-    background-color: rgb(199, 199, 199);
+    background-color: var(--tetiary1);
+    color: var(--bg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -349,7 +350,7 @@ button:hover{
 }
 #curriculumMenuLinks>a{
     margin:0.5em;
-    color:black;
+    color:var(--bg);
 }
 #menuButton{
     display: none;
