@@ -14,6 +14,7 @@ body{
     --secondary:rgb(24, 24, 24);
     --tetiary1:rgb(63, 63, 233);
     --tetiary2:rgb(241, 241, 48);
+    --bg:rgb(248, 248, 248);
     --p: 1.25rem;
     --h1:2.5rem;
     --h2:2rem;
@@ -27,7 +28,7 @@ body{
     color: black;
     max-width: 100vw;
     
-    background-color: rgb(231, 231, 255);
+    background-color:var(--bg) ;
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -63,8 +64,9 @@ header{
     position: fixed;
     z-index: 9999;
     width: 100vw;
-    background-color: rgba(207, 207, 207, 0.493);
+    background-color: rgba(113, 113, 255, 0.753);
     backdrop-filter: blur(25px);
+
     
 }
 nav{
@@ -89,9 +91,8 @@ main{
     flex-direction: row;
     justify-content: space-around;
 }
-#navigation>ul{
-    list-style: none;
-    /*GET TO THIS! REMOVE THE DOTS*/
+.navli{
+    color:var(--bg) !important;
 }
 
 .topImg{
@@ -115,7 +116,7 @@ main{
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.75);
     
 }
 #enrollDiv{
@@ -137,7 +138,7 @@ main{
 #intro{
     text-align: center;
     width:100%;
-    color: white;
+    color: var(--bg);
     backdrop-filter: blur(0.1px);
     border-radius: 10px;
     
@@ -149,12 +150,13 @@ main{
     padding-block: 1rem;
     padding-inline: 3rem;
     background-color: rgba(0, 0, 255, 0.411);
-    color: white;
+    color: var(--bg);
     backdrop-filter: blur(20px);
     border-radius: 10px;
+    box-shadow: var(--expensiveBoxShadow);
 }
 #quote{
-    filter: brightness(80%);
+    color:grey;
 }
 .imgCont{
     max-height: 50vh;
@@ -162,12 +164,18 @@ main{
     overflow: hidden;
     z-index: 200;
 }
+#statusdiv{
+    width:100%;
+    text-align: center;
+}
 #status{
-    color: green;
+    color: var(--tetiary1);
+    font-weight: bold;
+    text-align: center;
 }
 button{
     border-radius: 10px;
-    border: 1px solid white;
+    border: 1px solid var(--bg);
 }
 button:hover{
     cursor: pointer;
@@ -217,8 +225,8 @@ button:hover{
     padding:1rem 2rem;
     margin-block:1rem;
     background-color: var(--tetiary1);
-    color: white;
-    border:1px solid white;
+    color: var(--bg);
+    border:1px solid var(--bg);
     box-shadow: var(--expensiveBoxShadow);
     
     
@@ -229,8 +237,9 @@ button:hover{
 #heroExploreProgrammes{
     padding:1rem 2rem;
     margin-block:1rem;
-    background-color: var(--tetiary2);
+    background-color: var(--tetiary1);
     box-shadow: var(--expensiveBoxShadow);
+    color:var(--bg);
     
     
     border: none;
@@ -242,7 +251,9 @@ button:hover{
 }
 #heroGridSection2ImgCont>img{
     object-fit: contain;
+    border-radius: 10px;
     width:100%;
+    box-shadow: var(--expensiveBoxShadow);
 }
 
 #gridHome{
@@ -264,7 +275,7 @@ button:hover{
     flex-direction: column;
   
     justify-content: center;
-    color: white;
+    color: var(--bg);
 }
 
 #levelsContainer{
@@ -296,7 +307,7 @@ button:hover{
     background-color: rgb(97, 97, 97);
 }
 #back{
-    color:white;
+    color:var(--bg);
     width:10%;
     background-color: transparent;
     border: none;
@@ -422,6 +433,10 @@ button:hover{
     }
     #heroGridSection1{
         padding-right:1rem;
+    }
+    #heroGridSection2ImgCont>img{
+        width:100vw;
+        margin-left:-5%;
     }
     #homeCurriculumMenu{
         margin-inline: 0;
