@@ -45,7 +45,7 @@ li{
     list-style: circle;
 }
 .emphasis{
-    color:rgb(0, 255, 0) !important;
+    color:var(--tetiary2) !important;
     font-weight: bold;
 }
 p{
@@ -283,14 +283,25 @@ button:hover{
     padding: 1rem, 2rem;
     position: relative;
 }
+
 .level{
-    border:1px solid var(--tetiary1);
+    border:1px solid rgba(255, 255, 255, 0);
     margin-inline:4rem;
     margin-block: 0.5rem;
     text-align: center;
+    box-shadow: var(--expensiveBoxShadow);
+    background-color: var(--tetiary1);
+    border-radius: 10px;
 }
 .level:hover{
     cursor: pointer;
+    
+}
+.curriculumView{
+    background-color: var(--tetiary2);
+}
+.levelContact{
+    color:var(--bg);
 }
 #homeCurriculumMenu{
     position:absolute;
