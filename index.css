@@ -97,12 +97,11 @@ main{
     color:var(--bg) !important;
 }
 
-.topImg{
+.topImg:not(.introTopImg){
     margin-top: var(--navHeight);
     width:100%;
     min-height: 50px;
     max-height:80vh;
-    background-image: url("/assets/field2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,7 +113,26 @@ main{
     overflow: hidden;
 
 }
-.topImg::before{
+.introTopImg{
+    margin-top: var(--navHeight);
+    width:100%;
+    min-height: 50px;
+   height:95vh;
+    background-image: url("/assets/field2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    background-size:100% ;
+
+
+
+}
+.introTopImg::before{
     content: "";
     position: absolute;
     inset: 0;
@@ -160,6 +178,7 @@ main{
 #quote{
     color:grey;
 }
+
 .imgCont{
     max-height: 50vh;
     width:100vw;
