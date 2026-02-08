@@ -36,6 +36,9 @@ body{
     box-sizing: border-box;
     
 }
+#index{
+    gap: 5rem;
+}
 .topic{
     margin-top: var(--navHeight);
 }
@@ -56,6 +59,7 @@ li{
 
 p{
     font-size: var(--p);
+    line-height: 210%;
 }
 h1{
     font-size: var(--h1);
@@ -147,7 +151,7 @@ main{
     filter: contrast(110%) brightness(50%);
     
 
-    transform: scale(1.1);
+    transform: scale(1.25);
     transition: transform 9.9s ease;   
 
     
@@ -179,6 +183,7 @@ main{
     pointer-events: auto;
 }
 .highlight-anim{
+    border-radius: 10px;
     background-size: 0%;
     background-image:linear-gradient(  blue);
     background-repeat: no-repeat;
@@ -329,15 +334,47 @@ button:hover{
     margin-block: 1rem;
     
 }
+#admissionsInfo{
+    margin: 0;
+}
 #hero{
-    display: grid;
+    display: flex;
     
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #heroGridSection1{
-    padding-right:5rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+#heroGridSection1divh1{
+    color:blue;
+    width:100%;
+    text-align: center;
+}
+#heroGridSection1divh1>h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 3rem !important;
+}
+#heroGridSection1divh2{
+    max-width: 70vw;
+}
+#whychooseusbutton{
+    background-color: var(--tetiary1);
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    width: fit-content;
+    border-radius: 100vw;
+    color: white;
+    
+    
+}
+
 #heroEnrollBtn{
     padding:1rem 2rem;
     margin-block:1rem;
@@ -410,7 +447,7 @@ button:hover{
     text-align: center;
     box-shadow: var(--expensiveBoxShadow);
     background-color: var(--tetiary1);
-    border-radius: 10px;
+    border-radius: 50rem;
 }
 .level:hover{
     cursor: pointer;
@@ -590,6 +627,19 @@ button:hover{
         z-index: 99999;
         margin-inline: 0;
         margin-block: 0.5rem;
+    }
+    #heroGridSection1divh1{
+        margin-top: -20%;
+    }
+    #heroGridSection1divh1>h1{
+        font-size: var(--h1) !important;
+    }
+    #statusdiv{
+        margin-top: -20%;
+    }
+    #heroGridSection1divh2{
+        max-width: 100vw;
+
     }
 }
 @media (min-width: 768px) and (max-width: 1199.98px){
